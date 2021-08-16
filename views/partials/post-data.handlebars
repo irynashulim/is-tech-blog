@@ -1,11 +1,19 @@
 <form>
     <div class="columns">
-        <div class="column is-one-fifth"></div>
-        <div class="column">
-            <h1>{{title}}</h1>
-            <h2>Posted by {{user.username}} on {{format_date created_at}} </h2>
-            <p>{{contents}}</p>
+        <div class="column is-1"></div>
+        <div class="column is-7 has-background-info-dark has-text-warning-light">
+            <h1 class="is-size-4 ">{{title}}</h1>
         </div>
-        <div class="column is-one-fifth"></div>
+        <div class="column is-3 has-background-info-dark has-text-warning-light">
+            <h2>Posted by {{user.username}} on {{format_date created_at}} </h2>
+        </div>
+        <div class="column is-1"></div>
+    </div>
+    <div class="columns">
+        <div class="column is-1"></div>
+        <div class="column post-text">
+             <p>{{contents}}</p>
+        </div>
+        <div class="column is-1"></div>
     </div>
 </form>

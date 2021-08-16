@@ -1,0 +1,27 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  .wrapper {
+    min-height: 100%;
+  
+    /* Equal to height of footer */
+    /* But also accounting for potential margin-bottom of last child */
+    margin-bottom: -50px;
+  }
+  .footer,
+  .push {
+    height: 50px;
+  }
+
+.logo {
+    padding-left: 2rem;
+}
+
+.navbar {
+    padding-top: 1rem;
+}
+
+.post-text {
+    border:hsl(204, 71%, 39%) solid 2px;
+}
