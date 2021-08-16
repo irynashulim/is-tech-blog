@@ -14,7 +14,7 @@
     <!--navbar-->
     <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-            <p>Tech Blog</p>>
+            <p>Tech Blog</p>
 
             <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
                 data-target="navbarBasicExample">
@@ -26,9 +26,12 @@
 
         <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-start">
-                <a class="navbar-item">
+                <div class="home">
+                <a href="/" class="navbar-item">
                     Home
                 </a>
+                </div>
+                <div class="dashboard">
                 {{#if loggedIn }}
                 <a href="/dashboard" class="navbar-item">
                     Dashboard
@@ -40,12 +43,14 @@
                 {{/if}}
             </div>
             {{#if loggedIn }}
+             <div class="logout">
             <div class="navbar-end">
                 <div class="navbar-item">
                     <div class="buttons">
-                        <a class="button is-primary">
+                        <a class="button is-primary btnLogout" id="logout">
                             <strong>Logout</strong>
                         </a>
+                    </div>
                     </div>
                     {{else}}
                     <a href="/login">Login</a>

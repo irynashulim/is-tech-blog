@@ -1,0 +1,17 @@
+<form>
+    <div class="columns">
+        <div class="column is-one-fifth"></div>
+        <div class="column">
+            <h1>Comments</h1>
+               {{#each this}}
+               <div>
+            <h2>Posted by {{user.username}} on {{format_date created_at}} </h2>
+            <div>
+            <p>{{comment_text}}</p>
+            </div>
+            </div>
+            {{/each}}
+        </div>
+        <div class="column is-one-fifth"></div>
+    </div>
+</form>
