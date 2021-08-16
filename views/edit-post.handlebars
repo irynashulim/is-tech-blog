@@ -1,19 +1,22 @@
 <form> 
 <div class="columns">
-    <h1>Edit Post</h1>
-    <form>
-        <div>
+    <div class="column is-3"></div>
+        <div class="column is-6">
+    <h1 class="has-text-weight-medium is-size-5">Edit Post</h1>
             <h2>Post Title</h2>
-            <input type="text" id="post-title" name="post-title" value="{{post.title}}" />
+            <input class="input" type="text" id="post-title" name="post-title" value="{{post.title}}" />
             <h3>Post</h3>
             <textarea name="post-contents">{{post.contents}}</textarea>
         </div>
-        <div class="column">
-                 <button type="submit" class="btn edit-post">Save Post</button>
+        <div class="column is-3"></div>
+        </div>
+        <div class="columns">
+            <div class="column is-3"></div>
+            <div class="column is-6">
+                 <button type="submit" class="btn edit-post button is-info">Save Post</button>
+                <button type="button" class="btn delete-post button is-info">Delete Post</button>
             </div>
-            <div class="column">
-                <button type="button" class="btn delete-post">Delete Post</button>
-            </div>
+            <div class="column is-3"></div>
         </div> 
 </form>
 <script src="/javascript/edit-post.js"></script>
