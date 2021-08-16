@@ -1,38 +1,40 @@
 <form>
     <div class="columns">
-        <div class="column">
-             <form class="post-box">
-                <h2>Login</h2>
-                <div>
+        <div class="column is-4"></div>
+        <div class="column is-4">
+                <h2 class="has-text-weight-medium is-size-5">Login</h2>
+                <div class="field">
                     <label for="user-login" class="user">Username:</label>
-                    <input type="text" id="user-login" />
-                </div>
-                <div>
+                    <input class="input" type="text" placeholder="username" id="user-login" />
+            </div>
+            <div class="field">
                     <label for="password-login" class="user">Password:</label>
-                    <input type="password" id="password-login" />
+                    <input class="input" type="password" placeholder="password" id="password-login" />
                 </div>
                 <div>
-                    <button type="submit" class="btn" id="login">Login</button>
+                    <button type="submit" class="btn button is-info" id="login">Login</button>
                 </div>
-            </form>
-            </div>
-            <div class="column">
-                <form class="post-box" >
-                <h2>Signup</h2>
-                <div>
-                    <label for="username-signup" class="user">Username:</label>
-                    <input type="text" id="username-signup" />
-                </div>
-                <div>
-                    <label for="password-signup" class="user">Password:</label>
-                    <input type="password" id="password-signup" />
-                </div>
-                <div>
-                    <button type="submit" class="btn" id="signup">Signup</button>
-                </div>
-            </form>
-            </div>
         </div>
+        <div class="column is-4"></div>
+    </div>
+    <div class="columns">
+        <div class="column is-4"></div>
+        <div class="column is-4">
+                <h2 class="has-text-weight-medium is-size-5">Signup</h2>
+                <div class="field">
+                    <label for="username-signup" class="user">Username:</label>
+                    <input class="input" type="text" placeholder="username" id="username-signup" />
+                </div>
+                <div class="field">
+                    <label for="password-signup" class="user">Password:</label>
+                    <input class="input" type="password" placeholder="password" id="password-signup" />
+                </div>
+                <div>
+                    <button type="submit" class="btn button is-info" id="signup">Signup</button>
+                </div>
+        </div>
+        <div class="column is-4"></div>
+    </div>
 </form>
 
 <script src="/javascript/login.js"></script>
